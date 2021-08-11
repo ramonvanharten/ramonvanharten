@@ -1,22 +1,31 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="generator" content="RocketCake">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../../belgium_radio_aan/vlaanderen/vrt_klara_html.css">
+<link rel="shortcut icon" href="/favicon.ico" />
+<title>RadioOnline.FM Player</title>
 </head>
 <body>
-<div class="textstyle1">
-<span class="textstyle2"><br/></span><div id="player_header" style="text-align:center;">
+<iframe src="audio/source.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+
+<div id="player_header" style="text-align:center;">
 <img src="https://be.radioonline.fm/images/klara.png"/>
 </div>
 <div id="player_player">
 <audio controls autoplay style='width:100%; height:60px;' id="playAudio">
 <source src='http://icecast.vrtcdn.be/klara-high.mp3' type='audio/mp3' />
 </audio>
-</div><div id="container_74b63437"><div id="container_74b63437_padding" ></div></div>  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+}
+</script>
 </body>
-</html
+</html>
