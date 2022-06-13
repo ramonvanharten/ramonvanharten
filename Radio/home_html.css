@@ -38,17 +38,8 @@ a:hover { color:#B2B3B4; }
 		a.wsp55bed2db:visited{ color:#0000A0; text-decoration: underline} 
 		a.wsp55bed2db:active{ color:#0000A0; text-decoration: underline} 
 		a.wsp55bed2db:hover{ color:#0000A0; text-decoration: underline} 
-#table_6e9e2c54 th { border: 0px solid #8C8C8C;  } 
-#table_6e9e2c54 td { border: 0px solid #8C8C8C;  } 
-body { background-color:#000000; padding:0;  margin: 0; }
+body { background-color:#FFFF80; padding:0;  margin: 0; }
 .textstyle1 { text-align:center; }
-#table_6e9e2c54 { box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-table; width:100%; height:43px; background:none; border: 0px solid #8C8C8C; table-layout: fixed;  }
-#cell_7d7f79dd {  }
-.textstyle2 { font-size:14pt; font-family:'Arial Black', Gadget, sans-serif; color:#FFFF00; font-style:italic; text-decoration:underline; text-shadow: 2px 2px 2px #00FF00;  }
-#cell_15f9c727 {  }
-#cell_15f9c727 {  }
-#cell_15f9c727 {  }
-.textstyle3 { text-align:left; }
-.textstyle4 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFF00;  }
-.textstyle5 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
-#cell_4a065c39 {  }
+.textstyle2 { font-size:8pt; font-family:'Arial Black', Gadget, sans-serif; color:#0000A0; font-weight:bold; text-shadow: 4px 2px 4px #FF0080;  }
+#img_4906da01 { vertical-align: bottom; position:relative; display: inline-block; width:84%; background:none;  }
+.textstyle3 { font-size:28pt; font-family:'Arial Black', Gadget, sans-serif; color:#0000A0; font-weight:bold; text-shadow: 4px 2px 4px #FF0080;  }
