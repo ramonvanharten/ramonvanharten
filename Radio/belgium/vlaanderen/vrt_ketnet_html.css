@@ -41,4 +41,5 @@ a:hover { color:#B2B3B4; }
 body { background-color:#400080; padding:0;  margin: 0; }
 .textstyle1 { text-align:center; }
 .textstyle2 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#00FF80;  }
-#iframe_2bc926a0 { box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-block; width:97%; height:51px; background:none; border: 1px solid #A0A0A0;  }
+#container_79bc49e4 { vertical-align: top; position:relative; display: inline-block; width:52%; min-height:58px; background:none;  }
+#container_79bc49e4_padding { margin: 10px; display: block;  }
