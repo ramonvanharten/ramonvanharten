@@ -1,15 +1,68 @@
-<!-- Paste the following into the <head>  -->
-<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
-<!-- Paste the following into the <body> -->
-<video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" autoplay muted fluid="true" >
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video.js Failed to load switch to other video sources</title>
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+  </head>
+  <body>
+    <video id="my-video" class="video-js"></video>
 
-    <source src="https://wdrhf.akamaized.net/hls/live/2027997/cosmo/master.m3u8" type="application/x-mpegURL">
-    <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-</video>
-<script src="https://unpkg.com/video.js@7/dist/video.min.js"></script>
-<script type="text/javascript">
-    var player = videojs('videojs');
-</script>
+    <script>
+      // Video source for test
+      const sources = [
+        {
+          src: 'https://aaa/.m3u8',
+          type: 'application/x-mpegURL'
+        },
+        {
+          src: 'https://wdrhf.akamaized.net/hls/live/2027997/cosmo/master.m3u8',
+          type: 'application/x-mpegURL'
+        },
+        // The third real is available
+        {
+          src: 'https://wdrhf.akamaized.net/hls/live/2027997/cosmo/master.m3u8',
+          type: 'application/x-mpegURL'
+        }
+      ]
+
+      let index = 0 // Currently loaded video source sequence number
+
+      var player = videojs('my-video', {
+        width: 500,
+        controls: true,
+        preload: 'auto',
+        autoplay: 'muted', // The key to realize automatic video playback
+        sources: sources[index]
+      })
+
+      videojs.hook('beforeerror', (player, err) => {
+        console.log('beforeerror', index, player.src(), err)
+        // Video.js will trigger an err=null error immediately after switching / specifying the source. Filter it here
+        if (err !== null) {
+          player.src(sources[++index])
+        }
+
+        // Clear the error to prevent the error event from throwing an error on the console
+        return null
+      })
+
+      // Other events and hooks that can observe progress
+      // videojs.hook('error', (player, err) => {
+      //   console.log('error')
+      //   return err
+      // })
+
+      // player.on('loadeddata', () => {
+      //   console.log('loadeddata')
+      // })
+      // player.on('loadedmetadata', () => {
+      //   console.log('loadedmetadata')
+      // })
+      // player.on('loadstart', () => {
+      //   console.log('loadstart')
+      // })
+    </script>
+  </body>
+</html>
