@@ -39,7 +39,9 @@ a:hover { color:#B2B3B4; }
 		a.wsp55bed2db:active{ color:#0000A0; text-decoration: underline} 
 		a.wsp55bed2db:hover{ color:#0000A0; text-decoration: underline} 
 body { background-color:#400080; padding:0;  margin: 0; }
-.textstyle1 { text-align:center; }
-.textstyle2 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#00FF80;  }
-#container_35afed6c { vertical-align: top; position:relative; display: inline-block; width:52%; min-height:58px; background:none;  }
-#container_35afed6c_padding { margin: 10px; display: block;  }
+.textstyle1 { text-align:left; }
+.textstyle2 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+.textstyle3 { text-align:center; }
+#container_63d9d1e6 { vertical-align: top; position:relative; display: inline-block; width:52%; min-height:58px; background:none;  }
+#container_63d9d1e6_padding { margin: 10px; display: block;  }
+.textstyle4 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#00FF80;  }

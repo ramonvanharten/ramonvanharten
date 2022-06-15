@@ -9,18 +9,31 @@
 </head>
 <body>
 <div class="textstyle1">
-<span class="textstyle2"><br/></span><!DOCTYPE html>
-<html>
+<span class="textstyle2"><br/></span>  </div>
+<div class="textstyle3">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-6">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-FFFF00, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HLS Player (M3U8)</title>
+    <script src="hls.min.js" type="application/javascript"></script>
   </head>
-  <body> 
-    <div style="text-align: center;"><audio src="http://icecast-servers.vrtcdn.be/mnm_hits-high.mp3"
+  <body style="background-color: #400080;">
+    <div style="text-align: center;"><video controls="controls" src="https://hlshr1.akamaized.net/hls/live/2016533/hr1/master.m3u8"
 
-        preload="auto" controls="controls" autoplay="autoplay"></audio></div>
+        preload="none" autoplay="autoplay" height="54" width="300"></video>
+      <script>
+      ((source) => {
+        if (typeof Hls == "undefined") return;
+        if (!document.querySelector("video")) return;
+        var hls = new Hls();
+        hls.loadSource(source);
+        hls.attachMedia(document.querySelector("video"));
+      })("https://live-radio-cf-vrt.akamaized.net/groupa/live/68dc3b80-040e-4a75-a394-72f3bb7aff9a/live.isml/live-audio=128000.m3u8");
+    </script></div>
   </body>
-</html>
-<div id="container_3069617d"><div id="container_3069617d_padding" ></div></div>  </div>
+</html><div id="container_4eaa1660"><div id="container_4eaa1660_padding" ></div></div><span class="textstyle4"><br/></span>  </div>
 </body>
 </html>
