@@ -9,35 +9,29 @@
 </head>
 <body>
 <div class="textstyle1">
-<!DOCTYPE html>
-<html>
+<span class="textstyle2"><br/></span><!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="RocketCake">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="test_html.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-FFFF00, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HLS Player (M3U8)</title>
+    <script src="hls.min.js" type="application/javascript"></script>
   </head>
-  <body style="  background: #400080 url(/wp-content/uploads/2021/07/mein-kinderradio-radino-bg.png) no-repeat left top / contain!important">
-    <div class="textstyle1">
-      <span class="textstyle2"><br>
-      </span>
-      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-      <title>Mein Kinderradio Player</title>
-      <div style="text-align: center;"><audio style=" id=" audio-player"=""
+  <body style="background-color: #400080;">
+    <div style="text-align: center;"><video controls="controls" src="https://live-radio-cf-vrt.akamaized.net/groupc/live/4023dbf7-2934-459c-8ded-f91619f58df5/live.isml/live-audio=128000.m3u8"
 
-          src="http://icecast.vrtcdn.be/ra2ant-high.mp3" controls="controls" autoplay="autoplay">
-          <source src="http://icecast.vrtcdn.be/ra2ant-high.mp3" type="audio/mp3">
-          <object type="application/x-shockwave-flash" data="./Mein Kinderradio Player_files/flashmediaelement.swf.Download"
-
-            height="54" width="300"> <param name="movie" value="/sd7_f_flash/flashmediaelement.swf">
-            <param name="flashvars" value="controls=true&amp;file=https://stream01.zogl.net:8907/stream">
-          </object> </audio></div>
-      <div id="container_59eccf3d">
-        <div id="container_59eccf3d_padding"></div>
-      </div>
-    </div>
+        preload="none" autoplay="autoplay" height="54" width="300"></video>
+      <script>
+      ((source) => {
+        if (typeof Hls == "undefined") return;
+        if (!document.querySelector("video")) return;
+        var hls = new Hls();
+        hls.loadSource(source);
+        hls.attachMedia(document.querySelector("video"));
+      })("https://live-radio-cf-vrt.akamaized.net/groupc/live/4023dbf7-2934-459c-8ded-f91619f58df5/live.isml/live-audio=128000.m3u8");
+    </script></div>
   </body>
-</html><div id="container_2e9fec50"><div id="container_2e9fec50_padding" ></div></div>  </div>
+</html><div id="container_3251909e"><div id="container_3251909e_padding" ></div></div>  </div>
 </body>
 </html>
