@@ -10,28 +10,18 @@
 <body>
 <div class="textstyle1">
 <span class="textstyle2"><br/></span><!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-FFFF00, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HLS Player (M3U8)</title>
-    <script src="hls.min.js" type="application/javascript"></script>
+    <title>D:\Webruimte\Radio\Radio player</title>
   </head>
-  <body style="background-color: #400080;">
-    <div style="text-align: center;"><video controls="controls" src="https://live-radio-cf-vrt.akamaized.net/groupc/live/4023dbf7-2934-459c-8ded-f91619f58df5/live.isml/live-audio=128000.m3u8"
-
-        preload="none" autoplay="autoplay" height="54" width="300"></video>
-      <script>
-      ((source) => {
-        if (typeof Hls == "undefined") return;
-        if (!document.querySelector("video")) return;
-        var hls = new Hls();
-        hls.loadSource(source);
-        hls.attachMedia(document.querySelector("video"));
-      })("https://live-radio-cf-vrt.akamaized.net/groupc/live/4023dbf7-2934-459c-8ded-f91619f58df5/live.isml/live-audio=128000.m3u8");
-    </script></div>
+  <body>
+    <div style="text-align: center;"><audio controls="controls" src="http://icecast.vrtcdn.be/radio1_lagelanden-high.mp3"
+        preload="none" autoplay="autoplay"> <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio></div>
   </body>
-</html><div id="container_2e9fec50"><div id="container_2e9fec50_padding" ></div></div>  </div>
+</html>
+<div id="container_2e9fec50"><div id="container_2e9fec50_padding" ></div></div>  </div>
 </body>
 </html>
