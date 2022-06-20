@@ -16,7 +16,7 @@
     <title></title>
   </head>
   <body> 
-    <div style="text-align: center;"><audio src="https://icecast.ndr.de/ndr/ndrplus/live/mp3/128/stream.mp3"
+    <div style="text-align: center;"><audio src="https://www.ndr.de/resources/metadaten/audio/m3u/ndrplus.m3u"
 
         preload="auto" controls="controls" autoplay="autoplay"></audio></div>
   </body>
