@@ -38,6 +38,10 @@ a:hover { color:#B2B3B4; }
 		a.wsp55bed2db:visited{ color:#0000A0; text-decoration: underline} 
 		a.wsp55bed2db:active{ color:#0000A0; text-decoration: underline} 
 		a.wsp55bed2db:hover{ color:#0000A0; text-decoration: underline} 
+		a.wsp151ba0b7{ color:#FFFF00; text-decoration: underline} 
+		a.wsp151ba0b7:visited{ color:#FFFF00; text-decoration: underline} 
+		a.wsp151ba0b7:active{ color:#FFFF00; text-decoration: underline} 
+		a.wsp151ba0b7:hover{ color:#80FF00; text-decoration: underline} 
 body { background-color:#FFFF80; padding:0;  margin: 0; }
 .textstyle1 { text-align:center; }
 .textstyle2 { font-size:6pt; font-family:'Arial Black', Gadget, sans-serif; color:#0000A0; font-weight:bold; text-shadow: 4px 2px 4px #FF0080;  }
