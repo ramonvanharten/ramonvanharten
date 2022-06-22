@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://511937632.swh.strato-hosting.eu/radio/menu.html -->
+<html><script>
+    (function() {
+    class RuffleMimeType {
+        constructor(a, b, c) {
+            this.type = a, this.description = b, this.suffixes = c
+        }
+    }
+    class RuffleMimeTypeArray {
+        constructor(a) {
+            this.__mimetypes = [], this.__named_mimetypes = {};
+            for (let b of a) this.install(b)
+        }
+        install(a) {
+            let b = this.__mimetypes.length;
+            this.__mimetypes.push(a), this.__named_mimetypes[a.type] = a, this[a.type] = a, this[b] = a
+        }
+        item(a) {
+            return this.__mimetypes[a]
+        }
+        namedItem(a) {
+            return this.__named_mimetypes[a]
+        }
+        get length() {
+            return this.__mimetypes.length
+        }
+    }
+    class RufflePlugin extends RuffleMimeTypeArray {
+        constructor(a, b, c, d) {
+            super(d), this.name = a, this.description = b, this.filename = c
+        }
+        install(a) {
+            a.enabledPlugin || (a.enabledPlugin = this), super.install(a)
+        }
+    }
+    class RufflePluginArray {
+        constructor(a) {
+            this.__plugins = [], this.__named_plugins = {};
+            for (let b of a) this.install(b)
+        }
+        install(a) {
+            let b = this.__plugins.length;
+            this.__plugins.push(a), this.__named_plugins[a.name] = a, this[a.name] = a, this[b] = a
+        }
+        item(a) {
+            return this.__plugins[a]
+        }
+        namedItem(a) {
+            return this.__named_plugins[a]
+        }
+        get length() {
+            return this.__plugins.length
+        }
+    }
+    const FLASH_PLUGIN = new RufflePlugin("Shockwave Flash", "Shockwave Flash 32.0 r0", "ruffle.js", [new RuffleMimeType("application/futuresplash", "Shockwave Flash", "spl"), new RuffleMimeType("application/x-shockwave-flash", "Shockwave Flash", "swf"), new RuffleMimeType("application/x-shockwave-flash2-preview", "Shockwave Flash", "swf"), new RuffleMimeType("application/vnd.adobe.flash-movie", "Shockwave Flash", "swf")]);
+
+    function install_plugin(a) {
+        navigator.plugins.install || Object.defineProperty(navigator, "plugins", {
+            value: new RufflePluginArray(navigator.plugins),
+            writable: !1
+        }), navigator.plugins.install(a), 0 < a.length && !navigator.mimeTypes.install && Object.defineProperty(navigator, "mimeTypes", {
+            value: new RuffleMimeTypeArray(navigator.mimeTypes),
+            writable: !1
+        });
+        for (var b = 0; b < a.length; b += 1) navigator.mimeTypes.install(a[b])
+    }
+    install_plugin(FLASH_PLUGIN);
+})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./menu_html.css">
+</head>
+<body marginwidth="0" marginheight="0">
+<div class="textstyle1">
+<table id="table_6e9e2c54" cellpadding="3" cellspacing="1">	<tbody><tr>
+		<td width="0%" height="35px">
+		</td>
+		<td width="18%" height="35px" style="vertical-align: top; overflow:hidden; ">  <div id="cell_7d7f79dd">
+    <div class="textstyle1">
+      <span class="textstyle2"><a href="http://511937632.swh.strato-hosting.eu/radio/home.html" target="home" class="wspb170fe2">Home</a></span>
+      </div>
+    </div>
+		</td>
+		<td width="4%" height="35px">
+		</td>
+		<td width="23%" height="35px" style="vertical-align: top; overflow:hidden; ">  <div id="cell_15f9c727">
+    <div class="textstyle1">
+      <span class="textstyle2"><a href="http://511937632.swh.strato-hosting.eu/radio/senders.html" target="home" class="wspb170fe2">Senders</a></span>
+      </div>
+    </div>
+		</td>
+		<td width="4%" height="35px">
+		</td>
+		<td width="21%" height="35px" style="vertical-align: top; overflow:hidden; ">  <div id="cell_15f9c727">
+    <div class="textstyle1">
+      <span class="textstyle2"><a href="http://511937632.swh.strato-hosting.eu/radio/kinder/taal.html" target="home" class="wspb170fe2">Kinder</a></span>
+      </div>
+    </div>
+		</td>
+		<td width="4%" height="35px" style="vertical-align: top; overflow:hidden; ">  <div id="cell_15f9c727">
+    <div class="textstyle3">
+      <span class="textstyle4"> </span>
+      <span class="textstyle5">-hhhhhhhh</span>
+      </div>
+    </div>
+		</td>
+		<td width="24%" height="35px" style="vertical-align: top; overflow:hidden; ">  <div id="cell_4a065c39">
+    <div class="textstyle1">
+      <span class="textstyle2"><a href="mailto:websitevanharten@gmail.com" target="_blank" class="wspb170fe2">Kontakt</a></span>
+      </div>
+    </div>
+		</td>
+	</tr>
+</tbody></table>  </div>
+
+</body></html>
